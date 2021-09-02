@@ -18,7 +18,6 @@ class Arsenal:
     databases: tuple[str, ...] = ("PostgreSQL", "DynamoDB")
     datawarehouses: tuple[str, ...] = ("Hive", "Glue")
     misc     : tuple[str, ...] = ("Apache Spark", "Docker", "SQS", "SNS")
-    ongoing  : tuple[str, ...] = ("Scala - Functional Aspects")
 
     def jsonify(self) -> str:
         return json.dumps(asdict(self), indent=4)
